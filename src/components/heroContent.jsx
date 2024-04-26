@@ -133,7 +133,7 @@ function HeroContent() {
           />
         </div>
       </div>
-      <div className="flex  justify-between w-full ">
+      <div className="flex  justify-between w-full cursor-pointer   ">
         <img src="/Frame 41.svg" alt="" className="max-md:w-4/12" />
         <img src="/Frame 48.svg" alt="" className="max-md:w-5/12" />
       </div>

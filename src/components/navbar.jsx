@@ -13,13 +13,13 @@ const Navbar = () => {
       </div>
       <div className="flex flex-end">
         <div className="flex sm:gap-5 max-sm:gap-2 justify-between items-center text-lg whitespace-nowrap text-neutral-700 max-md:flex-wrap capitalize">
-          <div className="flex gap-5 justify-between self-stretch pr-5 my-auto max-md:hidden">
-            <div>Home</div>
-            <div>Flashcard</div>
-            <div>Contact</div>
-            <div>FAQ</div>
+          <div className="flex gap-5 justify-between self-stretch pr-5 my-auto max-md:hidden cursor-pointer   ">
+            <div className="hover:text-blue-800">Home</div>
+            <div className="hover:text-blue-800 ">Flashcard</div>
+            <div className="hover:text-blue-800">Contact</div>
+            <div className="hover:text-blue-800">FAQ</div>
           </div>
-          <div className="justify-center self-stretch px-8  py-2 font-medium bg-blue-800  text-white rounded-[32px] max-sm:px-3">
+          <div className="justify-center self-stretch px-8  py-2 font-medium bg-blue-800 cursor-pointer     text-white rounded-[32px] max-sm:px-3">
             Login
           </div>
           <div
@@ -39,14 +39,16 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-    { activeItem&&<div className="absolute top-20 justify-center   w-full rounded self-center h-screen backdrop-blur-lg  flex transition-transform  ">
-      <div className="flex flex-col gap-5 p-4 font-bold">
-        <div>Home</div>
-        <div>Flashcard</div>
-        <div>Contact</div>
-        <div>FAQ</div>
-      </div>
-    </div>}
+      {activeItem && (
+        <div className="absolute top-20 justify-center   w-full rounded self-center h-screen backdrop-blur-lg  flex transition-transform  ">
+          <div className="flex flex-col gap-5 p-4 font-bold">
+            <div>Home</div>
+            <div>Flashcard</div>
+            <div>Contact</div>
+            <div>FAQ</div>
+          </div>
+        </div>
+      )}
     </nav>
   );
 };
