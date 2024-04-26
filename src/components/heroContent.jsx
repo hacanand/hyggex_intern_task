@@ -35,12 +35,12 @@ const equations = [
 
 function Icon({ src, alt, onClick }) {
   return (
-    <img src={src} alt={alt} className="cursor-pointer" onClick={onClick} />
+    <img src={src} alt={alt} className="cursor-pointer max-sm:w-6" onClick={onClick} />
   );
 }
 function Equation({ children }) {
   return (
-    <button className="self-center mt-28 mb-16 text-4xl  font-bold tracking-wider text-center text-white max-md:my-10">
+    <button className="self-center mt-28 mb-16 sm:text-4xl text-2xl  font-bold sm:tracking-wider text-center text-white max-md:my-10">
       {children}
     </button>
   );
@@ -86,9 +86,9 @@ function HeroContent() {
   };
   return (
     <div className="flex-col flex w-full items-center ">
-      <div className="flex flex-col pt-20 w-7/12 ">
+      <div className="flex flex-col sm:pt-20 w-7/12 max-md:w-11/12 max-sm:w-full">
         <section className="flex flex-col px-9 pt-9 pb-20 mt-14 w-full justify-center rounded-[42.507px] max-md:px-5 max-md:mt-10 max-md:max-w-full bg-blue-700">
-          <div className="flex gap-5 justify-between max-md:flex-wrap max-md:max-w-full">
+          <div className="flex md:gap-5 max-sm:gap-2 justify-between max-md:flex-wrap max-md:max-w-full">
             {icons.map((icon, index) => (
               <Icon
                 key={index}
@@ -101,18 +101,18 @@ function HeroContent() {
           </div>
           <Equation>{equations[itemIndex].item}</Equation>
         </section>
-        <div className="flex gap-5 justify-between items-center self-center px-5 mt-8 w-full text-2xl font-bold text-gray-800 whitespace-nowrap max-w-[652px] max-md:flex-wrap max-md:max-w-full">
+        <div className="flex md:gap-5 max-sm:gap-2 justify-between items-center self-center px-5 mt-8 w-full text-2xl font-bold text-gray-800 whitespace-nowrap    max-md:max-w-full">
           <Icon
             src="/Vector.svg"
             alt=""
-            className="shrink-0 self-stretch my-auto aspect-square fill-[linear-gradient(180deg,)] w-[30px]"
+            className="shrink-0 self-stretch my-auto aspect-square  w-[30px]"
             onClick={resetHandler}
           />
-          <div className="flex gap-5 justify-between ">
+          <div className="flex md:gap-5 max-md:gap-2 justify-between ">
             <Icon
               src="/Vector (3).svg"
               alt=""
-              className="shrink-0 aspect-square  w-[50px]"
+              className="aspect-square md:w-[50px] max-md:w-[30px]"
               onClick={handlePrevClick}
             />
             <span className="my-auto">
@@ -121,7 +121,7 @@ function HeroContent() {
             <Icon
               src="/Vector (2).svg"
               alt=""
-              className="shrink-0 aspect-square w-[50px]"
+              className="aspect-square md:w-[50px] max-md:w-[30px]"
               onClick={handleNextClick}
             />
           </div>
@@ -129,13 +129,13 @@ function HeroContent() {
             src="/Vector (5).svg"
             alt=""
             className="shrink-0 self-stretch my-auto aspect-square fill-[linear-gradient(180deg,)] w-[30px]"
-           // onClick={ }
+            // onClick={ }
           />
         </div>
       </div>
-      <div className="flex justify-between w-full  ">
-        <img src="/Frame 41.svg" alt="" />
-        <img src="/Frame 48.svg" alt="" />
+      <div className="flex  justify-between w-full ">
+        <img src="/Frame 41.svg" alt="" className="max-md:w-4/12" />
+        <img src="/Frame 48.svg" alt="" className="max-md:w-5/12" />
       </div>
     </div>
   );

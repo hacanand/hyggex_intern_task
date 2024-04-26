@@ -4,9 +4,9 @@ import HeroContent from './heroContent';
 
 const Content = () => {
   return (
-    <div className="pt-20  ">
-      <div className="text-3xl font-bold bg-clip-text  text-blue-800 ">
-        Relations and Functions ( Mathematics )
+    <div className="sm:pt-20 max-sm:pt-10 ">
+      <div className="sm:text-3xl max-sm:text-xl font-bold bg-clip-text max-sm:text-center text-blue-800 ">
+        Relations and Functions (Mathematics)
       </div>
       <ContentNavItems />
       <div className="">

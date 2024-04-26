@@ -8,18 +8,18 @@ const Navbar = () => {
   };
   return (
     <nav className="flex relative justify-between py-5">
-      <div>
-        <img src="/Component 40.svg" alt="" />
+      <div className="pt-2">
+        <img src="/Component 40.svg" alt="" className="max-sm:w-32" />
       </div>
       <div className="flex flex-end">
-        <div className="flex gap-5 justify-between items-center text-lg whitespace-nowrap text-neutral-700 max-md:flex-wrap capitalize">
+        <div className="flex sm:gap-5 max-sm:gap-2 justify-between items-center text-lg whitespace-nowrap text-neutral-700 max-md:flex-wrap capitalize">
           <div className="flex gap-5 justify-between self-stretch pr-5 my-auto max-md:hidden">
             <div>Home</div>
             <div>Flashcard</div>
             <div>Contact</div>
             <div>FAQ</div>
           </div>
-          <div className="justify-center self-stretch px-8 py-2 font-medium bg-blue-800  text-white rounded-[32px] max-md:px-5">
+          <div className="justify-center self-stretch px-8  py-2 font-medium bg-blue-800  text-white rounded-[32px] max-sm:px-3">
             Login
           </div>
           <div

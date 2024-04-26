@@ -52,7 +52,7 @@ const AccordionItem = ({ title, content, index }) => {
 
 const Faq = () => {
   return (
-    <div className="flex items-start m-2 py-20">
+    <div className="flex items-start m-2 py-20 max-sm:py-10">
       <div className="w-full sm:w-10/12 md:w-2/3 my-1">
         <h2 className=" font-bold text-3xl text-blue-800 mb-2">
           FAQ 

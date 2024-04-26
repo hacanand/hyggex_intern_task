@@ -10,9 +10,9 @@ function IconWithText({ src, text, onClick }) {
         loading="lazy"
         src={src}
         alt=""
-        className="shrink-0 w-6 aspect-square"
+        className="shrink-0 sm:w-6 max-sm:w-4 aspect-square"
       />
-      <div>{text}</div>
+      <div className="max-md:text-xs">{text}</div>
     </button>
   );
 }
@@ -31,24 +31,24 @@ function BreadCrumb() {
   };
 
   return (
-    <div className="flex gap-0 text-lg text-center max-md:flex-wrap">
+    <div className="flex  gap-0 sm:text-lg text-center max-md:flex-wrap">
       <button
-        className="flex gap-0 items-center  font-medium whitespace-nowrap text-zinc-500"
+        className="flex gap-0 items-center font-medium whitespace-nowrap text-zinc-500"
         onClick={handleFlashcardClick}
       >
         <img
           loading="lazy"
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/fa79f2a6be98768deb6946ac9a8bde734d9a286b6cb87cdfcb46e0678efec65b?apiKey=2b10f3d4f07b463b82ae2fcf31a50eea&"
           alt=""
-          className="shrink-0 self-stretch aspect-square w-[30px]"
+          className="aspect-square  sm:w-[30px] max-sm:w-[20px] shrink-0"
         />
         <img
           loading="lazy"
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/b2a1d01218a1978c48b354696e34b2e896845efcefceae26d0436a1a5ac18a2a?apiKey=2b10f3d4f07b463b82ae2fcf31a50eea&"
           alt=""
-          className="shrink-0 self-stretch my-auto w-6 aspect-square"
+          className="shrink-0 self-stretch my-auto sm:w-6 max-sm:w-4 aspect-square"
         />
-        <div className="self-stretch my-auto">Flashcard</div>
+        <div className="self-stretch my-auto max-md:text-xs">Flashcard</div>
       </button>
       <div className="flex my-auto">
         <IconWithText
