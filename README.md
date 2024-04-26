@@ -9,7 +9,11 @@ This project is developed using React.js and Tailwind css using Vite.js as a bui
 ```bash
 git clone https://github.com/hacanand/hyggex_intern_task.git
 ```
-- Install the required packages using the following command:
+- Navigate to the project directory using the following command:
+```bash
+cd hyggex_intern_task
+```
+- Install the required packages using the following command in the current directory of the project:
 ```bash
 npm install
 ```
