@@ -2,7 +2,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-between p-5">
+    <nav className="flex justify-between py-5">
       <div>
         <img src="/Component 40.svg" alt="" />
       </div>

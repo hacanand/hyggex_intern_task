@@ -33,7 +33,7 @@ function BreadCrumb() {
   return (
     <div className="flex gap-0 text-lg text-center max-md:flex-wrap">
       <button
-        className="flex gap-0 items-center pl-5 font-medium whitespace-nowrap text-zinc-500"
+        className="flex gap-0 items-center  font-medium whitespace-nowrap text-zinc-500"
         onClick={handleFlashcardClick}
       >
         <img
