@@ -5,7 +5,7 @@ import Content from './components/content'
 import Faq from './components/faq'
 function App() {
   return (
-    <div className='px-48 gap-5'>
+    <div className='mx-28 max-lg:mx-14 max-md:mx-6 gap-5'>
       <Navbar />
       <BreadCrumb />
       <Content />
