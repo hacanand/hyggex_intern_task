@@ -12,7 +12,7 @@ function IconWithText({ src, text, onClick }) {
         alt=""
         className="shrink-0 sm:w-6 max-sm:w-4 aspect-square"
       />
-      <div className="max-md:text-xs">{text}</div>
+      <div className="max-md:text-xs text-xl">{text}</div>
     </button>
   );
 }
@@ -48,7 +48,9 @@ function BreadCrumb() {
           alt=""
           className="shrink-0 self-stretch my-auto sm:w-6 max-sm:w-4 aspect-square"
         />
-        <div className="self-stretch my-auto max-md:text-xs">Flashcard</div>
+        <div className="self-stretch text-xl my-auto max-md:text-xs">
+          Flashcard
+        </div>
       </button>
       <div className="flex my-auto">
         <IconWithText
@@ -56,7 +58,7 @@ function BreadCrumb() {
           text="Mathematics"
           onClick={handleMathematicsClick}
         />
-        <div className="flex gap-0 font-semibold text-blue-950">
+        <div className="flex gap-0 font-semibold ">
           <IconWithText
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/20a030871d5b9379c6b8c17539b316003547b190b396f1930c15789d3925f0f3?apiKey=2b10f3d4f07b463b82ae2fcf31a50eea&"
             text="Relation and Function"

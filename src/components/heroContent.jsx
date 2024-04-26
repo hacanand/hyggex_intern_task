@@ -54,7 +54,7 @@ function HeroContent() {
       onClick: () => console.log("Icon 1 clicked"),
     },
     {
-      src: "/Vector (4).svg ",
+      src: "/Vector (4).svg",
       alt: "",
       onClick: () => console.log("Icon 2 clicked"),
     },
