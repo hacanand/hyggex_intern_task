@@ -44,7 +44,7 @@ const AccordionItem = ({ title, content, index }) => {
           isOpen ? `max-h-fit` : ""
         }`}
       >
-        <p className="p-3 text-gray-900">{content}</p>
+        <p className="p-2 text-gray-900">{content}</p>
       </div>
     </li>
   );
