@@ -58,7 +58,7 @@ function BreadCrumb() {
           text="Mathematics"
           onClick={handleMathematicsClick}
         />
-        <div className="flex gap-0 font-semibold ">
+        <div className="flex gap-0 font-semibold">
           <IconWithText
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/20a030871d5b9379c6b8c17539b316003547b190b396f1930c15789d3925f0f3?apiKey=2b10f3d4f07b463b82ae2fcf31a50eea&"
             text="Relation and Function"

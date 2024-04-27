@@ -40,7 +40,7 @@ const Navbar = () => {
         </div>
       </div>
       {activeItem && (
-        <div className="absolute top-20 justify-center   w-full rounded self-center h-screen backdrop-blur-lg  flex transition-transform  ">
+        <div className="absolute top-20 justify-center w-full rounded self-center h-screen backdrop-blur-xl  flex transition-transform  ">
           <div className="flex flex-col gap-5 p-4 font-bold">
             <div>Home</div>
             <div>Flashcard</div>
